@@ -3,26 +3,29 @@ package simple.nlp.encoder.wordembedding
 import java.io.{File, FileWriter}
 
 import org.apache.spark.mllib.linalg.distributed.RowMatrix
-import org.apache.spark.mllib.linalg.{Matrix, SingularValueDecomposition, Vector, Vectors}
+import org.apache.spark.mllib.linalg.{Matrix, SingularValueDecomposition, Vector}
 import org.apache.spark.{SparkConf, SparkContext}
 import simple.nlp.SimpleNLP
 import simple.nlp.encoder.binary.EncoderBinary
 
 import scala.collection.mutable.ArrayBuffer
 
-//LATENT SEMANTIC INDEXING
 object EncoderLSI {
 
+  def encode(arrayOfDataBinaryEncoded:Array[Vector],
+             arrayOfSentencesBinaryEncoded:Array[Array[String]]): SVD = {
 
-  //ENCODE INPUT INTO A SVD DATA
-  def encode(input:Tuple2[Array[Vector], Array[Array[String]]]): SVD = {
     System.setProperty("hadoop.home.dir", "C:\\hadoop\\")
 
-    var data = input._1
-    val sparkConf = new SparkConf().setAppName("SOME APP NAME").setMaster("local[2]").set("spark.executor.memory", "6g")
+    val sparkConf = new SparkConf()
+      .setAppName("SimpleNLP")
+      .setMaster("local[2]")
+      .set("spark.executor.memory", "6g")
+
+
     val sc = new SparkContext(sparkConf)
 
-    var rows = sc.parallelize(data)
+    var rows = sc.parallelize(arrayOfDataBinaryEncoded)
 
     var mat: RowMatrix = new RowMatrix(rows)
 
@@ -33,7 +36,7 @@ object EncoderLSI {
 
 
     //RETURN SVD
-    val response:SVD = SVD( V.rows.collect().map(v => v.toArray),s,U, input._2)
+    val response:SVD = SVD( V.rows.collect().map(v => v.toArray),s,U, arrayOfSentencesBinaryEncoded)
 
     //STOP SPARK CONTEXT
     sc.stop()
@@ -43,9 +46,11 @@ object EncoderLSI {
 
   }
 
+  
+
 
   //CALCULATE NEW QUERY WITH IS A DIMENSIONALITY REDUCTION OF QUERY PASSED BY PARAMETER
-  def calcQuery(q:Array[Double], s:Vector, U:Matrix) = {
+  def calcQuery(q:Array[Double], svd:SVD) = {
     var queryCalculated: ArrayBuffer[Array[Double]] = ArrayBuffer.empty
 
     //OPERADORES VETORIAIS
@@ -54,8 +59,8 @@ object EncoderLSI {
 
     //MULTIPLICACAO Caux = U * S
     var cAux:ArrayBuffer[Array[Double]] = ArrayBuffer.empty
-    for (index <- s.toArray.indices){
-      cAux += arrayMutiplicationByEscalar.apply(U.colIter.next(),1/s(index))
+    for (index <- svd.s.toArray.indices){
+      cAux += arrayMutiplicationByEscalar.apply(svd.U.colIter.next(),1/svd.s(index))
     }
 
     //MULTIPLICACAO Qnew = Qold * Caux
