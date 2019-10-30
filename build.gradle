@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'scala'
+}
+
+group 'tcc'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.scala-lang:scala-library:2.12.8'
+    compile 'org.scala-lang:scala-reflect:2.12.8'
+    compile group: 'org.apache.spark', name: 'spark-core_2.12', version: '2.4.4'
+    compile 'org.apache.spark:spark-mllib_2.12:2.4.4'
+    testCompile  'junit:junit:4.12'
+}
