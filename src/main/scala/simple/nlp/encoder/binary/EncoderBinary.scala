@@ -1,50 +1,43 @@
 package simple.nlp.encoder.binary
 
 object EncoderBinary {
-  var tokensPos:Map[String,Int] = Map.empty
-  var tokenDecoder:Map[Int,String] = Map.empty
-  var tokensLength = 0
+  var tokenEncoder: Map[String, Int] = Map.empty
+  var tokenDecoder: Map[Int, String] = Map.empty
+  var numberOfTokens = 0
 
-  def loadTokens(setTokens: Set[String])={
-    tokensLength = 0
-    for(t <- setTokens){
-      tokensPos += ( t -> tokensLength)
-      tokenDecoder += ( tokensLength -> t)
-      tokensLength += 1
+  def loadTokens(setTokens: Set[String]) = {
+    numberOfTokens = 0
+    for (t <- setTokens) {
+      tokenEncoder += (t -> numberOfTokens)
+      tokenDecoder += (numberOfTokens -> t)
+      numberOfTokens += 1
     }
   }
 
-
-  def encode(arrayToken:Array[String]):Array[Int] = {
-    var tokensEncoded = Array.ofDim[Int](tokensLength)
+  def encode(arrayToken: Array[String]): Array[Int] = {
+    var tokensEncoded = Array.ofDim[Int](numberOfTokens)
     arrayToken.foreach(token => {
-      var index = tokensPos.get(token).get
-      var posValue = (tokensEncoded(index))
-      posValue = (posValue + 1)
-      tokensEncoded(index) = posValue
+      var tokenPosition = tokenEncoder(token)
+      var tokenOccurrence = (tokensEncoded(tokenPosition))
+      tokenOccurrence = (tokenOccurrence + 1)
+      tokensEncoded(tokenPosition) = tokenOccurrence
     })
     tokensEncoded
   }
 
-  def encodeBinary(arrayToken:Array[String]):Array[Int] = {
-    var tokensEncoded = Array.ofDim[Int](tokensLength)
+  def encodeWithoutCount(arrayToken: Array[String]): Array[Int] = {
+    var tokensEncoded = Array.ofDim[Int](numberOfTokens)
     arrayToken.foreach(token => {
-      var index = tokensPos.get(token).get
-      var posValue = (tokensEncoded(index))
-      tokensEncoded(index) = 1
+      tokensEncoded(tokenEncoder(token)) = 1
     })
     tokensEncoded
   }
 
-
-  def decode(arrayToken: Array[Int]):Array[String] ={
-    var stringDecoded:Array[String]= Array.empty
-    for (index <- arrayToken.indices){
-      if(arrayToken(index) >= 1){
-        stringDecoded = tokenDecoder.get(index).get +: stringDecoded
-      }
+  def decode(arrayToken: Array[Int]): Array[String] = {
+    var stringDecoded: Array[String] = Array.empty
+    for (tokenPosition <- arrayToken.indices) {
+      if (arrayToken(tokenPosition) >= 1) { stringDecoded = tokenDecoder(tokenPosition) +: stringDecoded }
     }
     stringDecoded
   }
-
 }

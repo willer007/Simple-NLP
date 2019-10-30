@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea4d895a-e54d-426d-a91c-d87791d4837e" name="Default Changelist" comment="" />
+    <list default="true" id="ea4d895a-e54d-426d-a91c-d87791d4837e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/SimpleNLP.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/SimpleNLP.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/binary/EncoderBinary.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/binary/EncoderBinary.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/tokenizator/Tokenizator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/tokenization/Tokenization.scala" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

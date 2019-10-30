@@ -9,7 +9,7 @@ object SimpleNLP {
 
   //OPERATORS
   val NormalizerTokens = NormalizerTokens
-  val Tokenizator = tokenizator.Tokenizator
+  val Tokenizator = tokenization.Tokenization
   val LexicalOperators = operator.OperatorLexical
 
   //ENCODERS
