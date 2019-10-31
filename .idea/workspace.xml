@@ -9,10 +9,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/scala/main/simple/nlp/learning/evolutionary/LearningGenetic$.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/main/simple/nlp/learning/evolutionary/LearningGenetic$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/scala/main/simple/nlp/learning/evolutionary/LearningGeneticTest$.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/main/simple/nlp/learning/evolutionary/LearningGeneticTest$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileScala.analysis" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileScala.analysis" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/evolutionary/LearningGenetic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/evolutionary/LearningGenetic.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/evolutionary/LearningGeneticTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/evolutionary/LearningGeneticTest.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -228,16 +226,6 @@
           <url>file://$PROJECT_DIR$/src/main/scala/simple/nlp/learning/evolutionary/LearningGeneticTest.scala</url>
           <line>10</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/simple/nlp/learning/evolutionary/LearningGenetic.scala</url>
-          <line>46</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/simple/nlp/learning/evolutionary/LearningGenetic.scala</url>
-          <line>42</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

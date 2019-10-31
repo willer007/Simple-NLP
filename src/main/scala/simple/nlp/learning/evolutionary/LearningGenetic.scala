@@ -5,32 +5,32 @@ import simple.nlp.operator.OperatorArray
 import scala.util.Random
 
 object LearningGenetic {
-  var generationSize = 9
-  var chromosomeSize = 0
+  private var generationSize = 9
+  private var chromosomeSize = 0
 
-  var generation: Array[Array[Float]] = Array.empty
-  var weights: Array[Float] = Array.empty
-
-  def initModel() = {
-    generation = createGen()
-    weights = createChromosome()
+  def initModel(generationSize : Int , chromosomeSize:Int ) = {
+    this.generationSize = generationSize
+    this.chromosomeSize = chromosomeSize
   }
 
   def optimize(objective: Int, input: Array[Float], iterations: Int): Array[Float] = {
 
-    //CONCERTAR ESTA PARTE
+    var generation: Array[Array[Float]] = createGen()
+    var weights: Array[Float] = createChromosome()
+
     for (i <- 0 to iterations) {
 
 
      val chromossomeSortedByObjective = generation
-        .map(chromosome => ( chromosome, OperatorArray.linearCombination(chromosome, input)))
-          .sortBy(t => math.abs(objective - t._2))
+       .map(chromosome => ( chromosome, OperatorArray.linearCombination(chromosome, input)))
+       .sortBy(t => math.abs(objective - t._2))
+       .map(t => t._1)
 
 
-      weights = chromossomeSortedByObjective(0)._1
+      weights = chromossomeSortedByObjective(0)
 
       var best: Array[Array[Float]] = Array.empty
-      best = chromossomeSortedByObjective.slice(0, 3).map(g => g._1)
+      best = chromossomeSortedByObjective.slice(0, 3)
       best = best :+ mutation(best(0))
       best = best :+ mutation(best(1))
       best = best :+ mutation(best(2))
