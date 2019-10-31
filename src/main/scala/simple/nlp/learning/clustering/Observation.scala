@@ -1,3 +1,3 @@
 package simple.nlp.learning.clustering
 
-case class Observation(position: Array[Double])
+case class Observation(data: Array[Double])

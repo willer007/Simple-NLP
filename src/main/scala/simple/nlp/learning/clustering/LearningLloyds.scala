@@ -7,8 +7,8 @@ import scala.util.Random
 
 
 object LearningLloyds{
-  var size: Int = 0
-  var clusters: Array[Cluster] = Array.empty
+  private var size: Int = 0
+  private var clusters: Array[Cluster] = Array.empty
 
   def initModel(numOfClusters: Int, sizeOfClusters:Int): Unit = {
     for (i <- 1 to numOfClusters) {
@@ -21,7 +21,6 @@ object LearningLloyds{
       clusters = Cluster.createCluster(centroid) +: clusters
     }
   }
-
 
 
   def findClusterWithMinDistance(arrayTokens: Array[Double]): Cluster = {
@@ -44,12 +43,9 @@ object LearningLloyds{
     else
       Array.fill(size) {Random.nextDouble()}
 
-  def optimize(points: Array[Array[Double]]): Array[Cluster] = {
+  def optimize(): Array[Cluster] = {
 
-    points.foreach(t => Cluster.addObservartion(findClusterWithMinDistance(t), Observation(t.map(a => a.toDouble))))
-
-    clusters = clusters
-      .map(c => Cluster.setCentroid(c, optimizeCluster(c)))
+    clusters = clusters.map(c => Cluster.setCentroid(c, optimizeCluster(c)))
 
 
     return clusters
