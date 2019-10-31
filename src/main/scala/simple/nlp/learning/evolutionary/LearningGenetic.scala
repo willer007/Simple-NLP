@@ -52,7 +52,6 @@ object LearningGenetic {
 
   def objectiveFunction(sumValue: Float, obj: Float): Float = math.abs(sumValue - obj)
 
-
   def calc(tokens: Array[Float]): Float =
     (weights zip tokens).map(t => t._1.toFloat * t._2.toFloat).sum
 
@@ -78,6 +77,4 @@ object LearningGenetic {
     Random.nextFloat()
   }
 
-
-  def createGene(size: Int): Unit = {}
 }

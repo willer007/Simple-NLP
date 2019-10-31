@@ -1,15 +1,12 @@
 package simple.nlp.similarity
 
+import simple.nlp.operator.OperatorVector
 
 
 object SimilarityCossine {
 
-  def productEscalar(q:Array[Double],d:Array[Double]): Double =
-    (q zip d).map(t => t._1*t._2).sum / (arrayModulus(q) * arrayModulus(d))
-
-  def arrayModulus(v:Array[Double]): Double = math.sqrt(v.map( a => math.pow(a,2)).sum)
-
-  def dotProduct(v:Array[Double],u:Array[Double]):Double = productEscalar(v,u)/(arrayModulus(v) * arrayModulus(u))
+  def similarityCossine(v1:Array[Double], v2:Array[Double]): Double =
+    (v1 zip v2).map(t => t._1*t._2).sum / (OperatorVector.arrayModulus(v1) * OperatorVector.arrayModulus(v2))
 
 
 }
