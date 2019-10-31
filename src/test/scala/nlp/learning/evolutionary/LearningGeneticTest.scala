@@ -13,7 +13,7 @@ object LearningGeneticTest {
     //MANTAIN BEST 3 INDIVIDUALS IN GENERATION
     LearningGenetic.setElitismSize(3)
 
-    //EXECUTE 2 CROSSOVER WITH THE ELIT
+    //EXECUTE 2 CROSSOVER WITH THE ELITE
     LearningGenetic.setCrossoverSize(2)
 
 
@@ -22,8 +22,11 @@ object LearningGeneticTest {
 
 
     val mutipleInput:Array[Array[Float]] = Array.fill(10) (input)
-    var testMutipleInputs = LearningGenetic.optimize(1,input,200);
-    
+    var testMutipleInputs = LearningGenetic.optimize(1,mutipleInput,200);
+
   }
 
 }
+
+
+
