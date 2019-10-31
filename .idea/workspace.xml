@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea4d895a-e54d-426d-a91c-d87791d4837e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/nlp/learning/clustering/LearningLloydsTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/scala/test/nlp/learning/evolutionary/LearningGeneticTest$.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/test/nlp/learning/evolutionary/LearningGeneticTest$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/nlp/learning/evolutionary/LearningGeneticTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/nlp/learning/evolutionary/LearningGeneticTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/LearningLloyds.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/LearningLloyds.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/evolutionary/LearningGenetic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/evolutionary/LearningGenetic.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/operator/OperatorArray.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/operator/OperatorArray.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,9 +69,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Scala Class" />
-        <option value="Class" />
         <option value="Package Object" />
         <option value="Scala Object" />
+        <option value="Class" />
       </list>
     </option>
   </component>

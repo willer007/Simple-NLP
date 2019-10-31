@@ -16,32 +16,7 @@ object LearningGenetic {
     this.generationSize = generationSize
     this.chromosomeSize = chromosomeSize
   }
-
-
-  def processNextGeneration( chromossomeSortedByObjective:Array[(Array[Float],Float)] ):Array[Array[Float]] = {
-    var nextGeneration: Array[Array[Float]] = Array.empty
-
-    val elitismIndividuals =
-      chromossomeSortedByObjective.slice(0, elitismSize).map(cromossome => cromossome._1)
-
-    nextGeneration = nextGeneration ++ elitismIndividuals
-
-    for (elitismIndividual <- elitismIndividuals) {
-      nextGeneration = nextGeneration :+ mutation(elitismIndividual)
-    }
-
-    for (index <- 0 until crossoverSize){
-      nextGeneration = nextGeneration :+ crossover(nextGeneration(index), nextGeneration(index + 1))
-    }
-
-    for (index <- 0 until  generationSize - nextGeneration.length ) {
-      nextGeneration = nextGeneration :+ createChromosome()
-    }
-
-    return nextGeneration
-
-  }
-
+  
   def optimize(objective: Int, input: Array[Float], iterations: Int): Array[Float] = {
 
     var generation: Array[Array[Float]] = createGen()
@@ -93,13 +68,13 @@ object LearningGenetic {
     return weights
   }
 
-  
 
-  def crossover(cromossome1: Array[Float], cromossome2: Array[Float]) =
+
+  private def crossover(cromossome1: Array[Float], cromossome2: Array[Float]) =
     cromossome1.slice(0, cromossome1.length / 2) ++ cromossome2.slice(cromossome1.length / 2, cromossome1.length)
 
 
-  def mutation(cromossome: Array[Float]): Array[Float] = {
+  private def mutation(cromossome: Array[Float]): Array[Float] = {
     var chromossomeAux: Array[Float] = cromossome.map(a => a)
     for (_ <- 0 to cromossome.length / mutationChance) {
       chromossomeAux(Random.nextInt(chromosomeSize)) = Random.nextFloat()
@@ -107,12 +82,35 @@ object LearningGenetic {
     chromossomeAux
   }
 
-  def createGen(): Array[Array[Float]] = Array.fill(generationSize) {
+  private def createGen(): Array[Array[Float]] = Array.fill(generationSize) {
     createChromosome()
   }
 
-  def createChromosome(): Array[Float] = Array.fill(chromosomeSize) {
+  private def createChromosome(): Array[Float] = Array.fill(chromosomeSize) {
     Random.nextFloat()
+  }
+
+  private def processNextGeneration( chromossomeSortedByObjective:Array[(Array[Float],Float)] ):Array[Array[Float]] = {
+    var nextGeneration: Array[Array[Float]] = Array.empty
+
+    val elitismIndividuals =
+      chromossomeSortedByObjective.slice(0, elitismSize).map(cromossome => cromossome._1)
+
+    nextGeneration = nextGeneration ++ elitismIndividuals
+
+    for (elitismIndividual <- elitismIndividuals) {
+      nextGeneration = nextGeneration :+ mutation(elitismIndividual)
+    }
+
+    for (index <- 0 until crossoverSize){
+      nextGeneration = nextGeneration :+ crossover(nextGeneration(index), nextGeneration(index + 1))
+    }
+
+    for (index <- 0 until  generationSize - nextGeneration.length ) {
+      nextGeneration = nextGeneration :+ createChromosome()
+    }
+
+    return nextGeneration
   }
 
   def setMutationChance(mutationChance: Int) = this.mutationChance = mutationChance
@@ -126,8 +124,6 @@ object LearningGenetic {
   def setCrossoverSize(crossover:Int) = this.crossoverSize = crossoverSize
 
   def getCrossoverSize() = this.crossoverSize
-
-
 
 
 }

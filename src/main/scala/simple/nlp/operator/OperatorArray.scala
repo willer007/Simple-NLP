@@ -5,4 +5,9 @@ object OperatorArray {
 
   def linearCombination(v1: Array[Float], v2: Array[Float]): Float =
     (v1 zip v2 ).map(t => t._1.toFloat * t._2.toFloat).sum
+
+
+  def euclideanDistance(v1: Array[Double], v2: Array[Double]): Double =
+    (v1 zip v2).map(v => math.pow(v._1 - v._2, 2)).sum
+
 }

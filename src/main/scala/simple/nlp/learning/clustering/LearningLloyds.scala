@@ -1,5 +1,6 @@
 package simple.nlp.learning.clustering
 
+import simple.nlp.operator.OperatorArray
 import scala.collection.mutable.ArrayBuffer
 import scala.util.Random
 
@@ -21,15 +22,13 @@ object LearningLloyds{
     }
   }
 
-  def euclideanDistance(array1: Array[Double], array2: Array[Double]): Double =
-    (array1 zip array2).map(v => math.pow(v._1 - v._2, 2)).sum
 
 
   def findClusterWithMinDistance(arrayTokens: Array[Double]): Cluster = {
     var minDistance: Double = 999999999999f
     var minCluster: Cluster = Cluster(Array.empty, ArrayBuffer.empty)
     for (c <- clusters) {
-      var d = euclideanDistance(c.centroid, arrayTokens)
+      var d = OperatorArray.euclideanDistance(c.centroid, arrayTokens)
       if (d < minDistance) {
         minDistance = d
         minCluster = c
