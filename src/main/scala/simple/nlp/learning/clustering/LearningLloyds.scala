@@ -7,7 +7,6 @@ import scala.util.Random
 
 
 object LearningLloyds{
-  private var size: Int = 0
   private var clusters: Array[Cluster] = Array.empty
 
   def initModel(numOfClusters: Int, sizeOfClusters:Int): Unit = {
