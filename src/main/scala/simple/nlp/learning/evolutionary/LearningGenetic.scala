@@ -63,7 +63,7 @@ object LearningGenetic {
       println("ERROR ITERATION " + i + ": " + math.abs(objective - prediction))
     }
 
-    print("WEIGHTS * INPUT =  " + prediction)
+    println("WEIGHTS * INPUT =  " + prediction)
     return weights
   }
 

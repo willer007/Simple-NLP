@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea4d895a-e54d-426d-a91c-d87791d4837e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/scala/nlp/learning/evolutionary/LearningGeneticTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/scala/main/simple/nlp/learning/evolutionary/LearningGenetic$.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/main/simple/nlp/learning/evolutionary/LearningGenetic$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/scala/main/simple/nlp/learning/evolutionary/LearningGenetic.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/main/simple/nlp/learning/evolutionary/LearningGenetic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/scala/main/simple/nlp/learning/evolutionary/LearningGeneticTest$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/scala/main/simple/nlp/learning/evolutionary/LearningGeneticTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileScala.analysis" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileScala.analysis" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/evolutionary/LearningGenetic.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/evolutionary/LearningGenetic.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileScala.analysis.relations" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileScala.analysis.relations" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/evolutionary/LearningGeneticTest.scala" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,17 +43,31 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="yank-nlp" type="f1a62948:ProjectNode" />
+                <item name="SimpleNLP" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="yank-nlp" type="f1a62948:ProjectNode" />
+                <item name="SimpleNLP" type="f1a62948:ProjectNode" />
                 <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SimpleNLP" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SimpleNLP" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -59,8 +81,8 @@
       <list>
         <option value="Scala Class" />
         <option value="Class" />
-        <option value="Scala Object" />
         <option value="Package Object" />
+        <option value="Scala Object" />
       </list>
     </option>
   </component>
@@ -93,25 +115,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.LearningGeneticTest">
-    <configuration name="EncoderLSI" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="simple.nlp.encoder.wordembedding.EncoderLSI" />
-      <module name="yank-nlp.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="simple.nlp.encoder.wordembedding.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LearningGeneticTest" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="simple.nlp.learning.evolutionary.LearningGeneticTest" />
-      <module name="SimpleNLP.main" />
+      <option name="MAIN_CLASS_NAME" value="nlp.learning.evolutionary.LearningGeneticTest" />
+      <module name="SimpleNLP.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="simple.nlp.learning.evolutionary.*" />
+          <option name="PATTERN" value="nlp.learning.evolutionary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,20 +154,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testEncoderLSI" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="testEncoderLSI" />
-      <module name="yank-nlp.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="simple-nlp [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="simple-nlp [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.simple-nlp [build]" />
+        <item itemvalue="Gradle.simple-nlp [clean]" />
         <item itemvalue="Application.LearningGeneticTest" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.testEncoderLSI (1)" />
-        <item itemvalue="Application.testEncoderLSI" />
-        <item itemvalue="Application.EncoderLSI" />
       </list>
     </recent_temporary>
   </component>

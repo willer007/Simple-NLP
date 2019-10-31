@@ -1,4 +1,6 @@
-package simple.nlp.learning.evolutionary
+package nlp.learning.evolutionary
+
+import simple.nlp.learning.evolutionary.LearningGenetic
 
 object LearningGeneticTest {
 
@@ -15,11 +17,13 @@ object LearningGeneticTest {
     LearningGenetic.setCrossoverSize(2)
 
 
-
     val input:Array[Float] = Array(1,5,6,5,7,4,8,1,4,3)
-    var teste = LearningGenetic.optimize(1,input,200);
+    var testSingleInput = LearningGenetic.optimize(1,input,200);
 
 
+    val mutipleInput:Array[Array[Float]] = Array.fill(10) (input)
+    var testMutipleInputs = LearningGenetic.optimize(1,input,200);
+    
   }
 
 }
