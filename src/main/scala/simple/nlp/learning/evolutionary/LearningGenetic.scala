@@ -5,13 +5,16 @@ import simple.nlp.operator.OperatorArray
 import scala.util.Random
 
 object LearningGenetic {
-  private var generationSize = 9
+  private var generationSize = 0
   private var chromosomeSize = 0
+  private var mutation = 10;
+
 
   def initModel(generationSize : Int , chromosomeSize:Int ) = {
     this.generationSize = generationSize
     this.chromosomeSize = chromosomeSize
   }
+
 
   def optimize(objective: Int, input: Array[Float], iterations: Int): Array[Float] = {
 
@@ -37,18 +40,11 @@ object LearningGenetic {
       best = best :+ crossover(best(0), best(1))
       best = best :+ crossover(best(1), best(2))
       best = best :+ createChromosome()
-
-
       generation = best
-    //  println("GERACAO: \n" + generation(0).slice(0, 10).map(a => a.toString).reduce((a, b) => a + " \n" + b))
-    //  println("PESOS: \n" + weights.slice(0, 10).map(a => a.toString).reduce((a, b) => a + " \n " + b))
-      println("PESO ITERACAO " + i + ": " + math.abs(objective - OperatorArray.linearCombination(input,weights).floatValue()))
-      println("\n")
-
+      println("ERROR ITERATION " + i + ": " + math.abs(objective - OperatorArray.linearCombination(input,weights).floatValue()))
     }
 
-
-    print("PESO FINAL: " + OperatorArray.linearCombination(input ,weights).floatValue())
+    print("WEIGHTS * INPUT =  " + OperatorArray.linearCombination(input ,weights).floatValue())
     return weights
   }
 
@@ -63,7 +59,7 @@ object LearningGenetic {
   //MUTACAO DE 10% ESTA OK
   def mutation(cromossome: Array[Float]): Array[Float] = {
     var chromossomeAux:Array[Float] =  cromossome.map( a => a)
-    for (_ <- 0 to cromossome.length / 10) {
+    for (_ <- 0 to cromossome.length / mutation) {
       chromossomeAux(Random.nextInt(chromosomeSize)) = Random.nextFloat()
     }
     chromossomeAux
@@ -75,10 +71,13 @@ object LearningGenetic {
     createChromosome()
   }
 
-
   //FUNCAO ESTA OK
   def createChromosome(): Array[Float] = Array.fill(chromosomeSize) {
     Random.nextFloat()
   }
+
+  def setMutation(mutationChance:Int) = this.mutation = mutationChance
+
+  def getMutation() = this.mutation
 
 }
