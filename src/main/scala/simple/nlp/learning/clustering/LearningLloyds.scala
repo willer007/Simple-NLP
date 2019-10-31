@@ -15,38 +15,29 @@ object LearningLloyds{
     }
   }
 
-  def initModel(arrayOfClusters:Array[Array[Double]]):Unit = {
+  def initModel(arrayOfClusters:Array[Array[Float]]):Unit = {
     for ( centroid <- arrayOfClusters) {
       clusters = Cluster.createCluster(centroid) +: clusters
     }
   }
 
+  def distanceClusterFromData(cluster:Cluster, data:Array[Float]) : Float =
+    OperatorArray.euclideanDistance(cluster.centroid,data)
 
-  def findClusterWithMinDistance(arrayTokens: Array[Double]): Cluster = {
-    var minDistance: Double = 999999999999f
-    var minCluster: Cluster = Cluster(Array.empty, ArrayBuffer.empty)
-    for (c <- clusters) {
-      var d = OperatorArray.euclideanDistance(c.centroid, arrayTokens)
-      if (d < minDistance) {
-        minDistance = d
-        minCluster = c
-      }
-    }
-    minCluster
+  def assignDataToCluster(data:Array[Float]): Unit = {
+    var clustersOrdenedByDistance = clusters
+      .map(cluster => (cluster, distanceClusterFromData(cluster, data)))
+      .sortBy(t => t._2)
+
+    Cluster.addData(clustersOrdenedByDistance(0)._1,data)
   }
 
-  def sumPosition(array1: Array[Double], array2: Array[Double]) = (array1 zip array2).map(v => v._1 + v._2)
+  def optimize(inputs:Array[Array[Float]]): Array[Cluster] = {
 
-  def optimizeCluster(cluster: Cluster) = if (cluster.observations.nonEmpty)
-      cluster.observations.map(a => a.position).reduce((a, b) => sumPosition(a, b)).map(a => a / cluster.observations.length)
-    else
-      Array.fill(size) {Random.nextDouble()}
-
-  def optimize(): Array[Cluster] = {
-
-    clusters = clusters.map(c => Cluster.setCentroid(c, optimizeCluster(c)))
+    /*clusters = clusters.map(c => Cluster.setCentroid(c, optimizeCluster(c)))
 
 
+    return clusters*/
     return clusters
   }
 
