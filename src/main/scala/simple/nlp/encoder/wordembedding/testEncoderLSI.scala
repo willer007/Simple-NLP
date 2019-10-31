@@ -1,7 +1,7 @@
 package simple.nlp.encoder.wordembedding
 
 object testEncoderLSI {
-
+/*
   def main(args: Array[String]): Unit = {
 
 
@@ -81,6 +81,8 @@ object testEncoderLSI {
 
 
   }
+*/
 }
+
 
 

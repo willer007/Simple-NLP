@@ -8,13 +8,13 @@ import simple.nlp.operator.OperatorLexical
 object SimpleNLP {
 
   //OPERATORS
-  val NormalizerTokens = NormalizerTokens
+  val NormalizerTokens = normalizer.tokens.NormalizerTokens
   val Tokenizator = tokenization.Tokenization
   val LexicalOperators = operator.OperatorLexical
 
   //ENCODERS
-  val EncoderBinary = EncoderBinary
-  val EncoderLSI = EncoderLSI
+  val EncoderBinary = encoder.binary.EncoderBinary
+  val EncoderLSI = encoder.wordembedding.EncoderLSI
 
   //LEARNING
   val LearningGenetic = learning.evolutionary.LearningGenetic
