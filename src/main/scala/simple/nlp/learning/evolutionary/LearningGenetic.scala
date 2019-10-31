@@ -59,7 +59,7 @@ object LearningGenetic {
       prediction = chromossomeSortedByObjective(0)._2
 
       generation = processNextGeneration(chromossomeSortedByObjective)
-      
+
       println("ERROR ITERATION " + i + ": " + math.abs(objective - prediction))
     }
 
@@ -93,9 +93,7 @@ object LearningGenetic {
     return weights
   }
 
-
-  def objectiveFunction(sumValue: Float, obj: Float): Float = math.abs(sumValue - obj)
-
+  
 
   def crossover(cromossome1: Array[Float], cromossome2: Array[Float]) =
     cromossome1.slice(0, cromossome1.length / 2) ++ cromossome2.slice(cromossome1.length / 2, cromossome1.length)
