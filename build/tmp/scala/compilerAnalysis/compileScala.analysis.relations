@@ -23,8 +23,6 @@ products:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Cluster.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\clustering\Cluster.class
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\LearningLloyds.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\clustering\LearningLloyds$.class
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\LearningLloyds.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\clustering\LearningLloyds.class
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Observation.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\clustering\Observation$.class
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Observation.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\clustering\Observation.class
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\evolutionary\LearningGenetic.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\evolutionary\LearningGenetic$.class
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\evolutionary\LearningGenetic.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\evolutionary\LearningGenetic.class
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\normalizer\lemmatizer\Lemma.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\normalizer\lemmatizer\Lemma$.class
@@ -69,8 +67,6 @@ binary dependencies:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Cluster.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\LearningLloyds.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\LearningLloyds.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Observation.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Observation.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\evolutionary\LearningGenetic.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\evolutionary\LearningGenetic.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\normalizer\lemmatizer\Lemma.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
@@ -94,9 +90,8 @@ source dependencies:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\EncoderLSI.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\binary\EncoderBinary.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\EncoderLSI.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\DataLSI.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\EncoderLSI.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\SVD.scala
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Cluster.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Observation.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\LearningLloyds.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Cluster.scala
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\LearningLloyds.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Observation.scala
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\LearningLloyds.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\operator\OperatorArray.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\evolutionary\LearningGenetic.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\operator\OperatorArray.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\normalizer\lemmatizer\Lemmatizer.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\normalizer\lemmatizer\Lemma.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\similarity\SimilarityCossine.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\operator\OperatorArray.scala
@@ -134,8 +129,6 @@ class names:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Cluster.scala -> simple.nlp.learning.clustering.Cluster$
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\LearningLloyds.scala -> simple.nlp.learning.clustering.LearningLloyds
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\LearningLloyds.scala -> simple.nlp.learning.clustering.LearningLloyds$
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Observation.scala -> simple.nlp.learning.clustering.Observation
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Observation.scala -> simple.nlp.learning.clustering.Observation$
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\evolutionary\LearningGenetic.scala -> simple.nlp.learning.evolutionary.LearningGenetic
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\evolutionary\LearningGenetic.scala -> simple.nlp.learning.evolutionary.LearningGenetic$
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\normalizer\lemmatizer\Lemma.scala -> simple.nlp.normalizer.lemmatizer.Lemma

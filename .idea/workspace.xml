@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ea4d895a-e54d-426d-a91c-d87791d4837e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/LearningLloyds.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/LearningLloyds.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/nlp/learning/clustering/LearningLloydsTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/nlp/learning/clustering/LearningLloydsTest.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +101,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LearningGeneticTest">
+  <component name="RunManager" selected="Application.LearningLloydsTest">
     <configuration name="LearningGeneticTest" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="nlp.learning.evolutionary.LearningGeneticTest" />
       <module name="SimpleNLP.test" />
@@ -113,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="edp.test" />
-      <module name="yank-nlp.main" />
+    <configuration name="LearningLloydsTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="nlp.learning.clustering.LearningLloydsTest" />
+      <module name="SimpleNLP.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edp.*" />
+          <option name="PATTERN" value="nlp.learning.clustering.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testEncoderLSI (1)" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="simple.nlp.encoder.testEncoderLSI" />
+    <configuration name="test" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="edp.test" />
       <module name="yank-nlp.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="simple.nlp.encoder.wordembedding.*" />
+          <option name="PATTERN" value="edp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LearningLloydsTest" />
         <item itemvalue="Gradle.simple-nlp [build]" />
         <item itemvalue="Gradle.simple-nlp [clean]" />
         <item itemvalue="Application.LearningGeneticTest" />
         <item itemvalue="Application.test" />
-        <item itemvalue="Application.testEncoderLSI (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -242,6 +244,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/test/scala/nlp/learning/clustering/LearningLloydsTest.scala</url>
+          <line>18</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/LearningLloyds.scala</url>
+          <line>71</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/yank_nlp$EncoderLSI.ic" NAME="EncoderLSI Coverage Results" MODIFIED="1567703913423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

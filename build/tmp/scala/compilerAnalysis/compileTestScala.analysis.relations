@@ -1,7 +1,14 @@
 products:
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\test\nlp\learning\clustering\LearningLloydsTest$.class
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\test\nlp\learning\clustering\LearningLloydsTest.class
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\test\nlp\learning\evolutionary\LearningGeneticTest$.class
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\test\nlp\learning\evolutionary\LearningGeneticTest.class
 binary dependencies:
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\clustering\Cluster.class
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\clustering\LearningLloyds$.class
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\clustering\LearningLloyds.class
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\evolutionary\LearningGenetic$.class
@@ -9,5 +16,7 @@ binary dependencies:
 source dependencies:
 external dependencies:
 class names:
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> nlp.learning.clustering.LearningLloydsTest
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> nlp.learning.clustering.LearningLloydsTest$
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> nlp.learning.evolutionary.LearningGeneticTest
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> nlp.learning.evolutionary.LearningGeneticTest$
