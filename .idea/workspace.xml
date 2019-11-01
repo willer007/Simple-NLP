@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ea4d895a-e54d-426d-a91c-d87791d4837e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/Cluster.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/Cluster.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/LearningLloyds.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/LearningLloyds.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/operator/OperatorArray.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/operator/OperatorArray.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

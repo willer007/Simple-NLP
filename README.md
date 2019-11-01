@@ -1,13 +1,9 @@
 # SimpleNLP 
 
-## VERSAO INICIAL DO README !
+## Objective
 
-## Objetivo 
+Development of a library with Natural Language Processing funcionalities
 
-Desenvolvimento de uma biblioteca de processamento de linguagem natural
+## Use
 
-
-## Implementação
-
-O projeto foi desenvolvido utilizando SCALA e a biblioteca para processamento  matemático do projeto  Spark
-
+WORK IN PROGRESS
