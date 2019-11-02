@@ -13,3 +13,7 @@ object Cluster {
   def createCluster(centroid: Array[Float]):Cluster = Cluster(centroid,ArrayBuffer.empty)
 
 }
+
+
+
+

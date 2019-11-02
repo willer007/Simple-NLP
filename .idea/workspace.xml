@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ea4d895a-e54d-426d-a91c-d87791d4837e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/wordembedding/testEncoderLSI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/nlp/encoder/wordembedding/EncoderLSITest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/Cluster.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/Cluster.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/LearningLloyds.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/LearningLloyds.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/scala/nlp/learning/clustering/LearningLloydsTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/nlp/learning/clustering/LearningLloydsTest.scala" afterDir="false" />
     </list>
@@ -68,8 +70,8 @@
       <list>
         <option value="Scala Class" />
         <option value="Package Object" />
-        <option value="Scala Object" />
         <option value="Class" />
+        <option value="Scala Object" />
       </list>
     </option>
   </component>
@@ -249,13 +251,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/test/scala/nlp/learning/clustering/LearningLloydsTest.scala</url>
-          <line>18</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/LearningLloyds.scala</url>
-          <line>71</line>
+          <line>63</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

@@ -14,9 +14,10 @@ object LearningLloydsTest {
     }
 
 
-    var teste = LearningLloyds.optimize(inputs,100)
+    var test = LearningLloyds.optimize(inputs,100)
 
-    print("teste")
   }
-
 }
+
+
+

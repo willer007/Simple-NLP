@@ -54,12 +54,6 @@ object LearningLloyds{
   def optimize(inputs:Array[Array[Float]], iterations:Int): Array[Cluster] = {
     inputs.foreach( d => assignDataToCluster(d))
 
-
-    //A COMPLETE ITERATION
-    // STEP CALCULE MEAN OF CLUSTER DATA
-    // ASSIGN MEAN TO CLUSTER CENTROID
-    // CLEAR CLUSTER DATA
-    // ASSIGN DATA TO NEW CLUSTERS WITH OPTIMIZED CENTROIDS
     for( _ <- 1 to iterations) {
       clusters = clusters
         .map(c => Cluster.setCentroid(c, calculeClusterMean(c)))
@@ -67,8 +61,6 @@ object LearningLloyds{
 
       inputs.foreach(d => assignDataToCluster(d))
     }
-
-
     return clusters
   }
 
