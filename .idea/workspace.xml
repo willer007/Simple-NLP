@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ea4d895a-e54d-426d-a91c-d87791d4837e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/wordembedding/DataLSI.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/wordembedding/EncoderLSI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/wordembedding/EncoderLSI.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/wordembedding/SVD.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/wordembedding/SVD.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/operator/OperatorArray.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/operator/OperatorArray.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/nlp/encoder/wordembedding/EncoderLSITest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/nlp/encoder/wordembedding/EncoderLSITest.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
