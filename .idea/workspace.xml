@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ea4d895a-e54d-426d-a91c-d87791d4837e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/wordembedding/testEncoderLSI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/nlp/encoder/wordembedding/EncoderLSITest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/Cluster.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/Cluster.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/LearningLloyds.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/LearningLloyds.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/nlp/learning/clustering/LearningLloydsTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/nlp/learning/clustering/LearningLloydsTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/wordembedding/EncoderLSI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/wordembedding/EncoderLSI.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/wordembedding/SVD.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/wordembedding/SVD.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/operator/OperatorArray.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/operator/OperatorArray.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/nlp/encoder/wordembedding/EncoderLSITest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/nlp/encoder/wordembedding/EncoderLSITest.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +87,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -103,7 +104,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LearningLloydsTest">
+  <component name="RunManager" selected="Application.EncoderLSITest">
+    <configuration name="EncoderLSITest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="nlp.encoder.wordembedding.EncoderLSITest" />
+      <module name="SimpleNLP.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nlp.encoder.wordembedding.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LearningGeneticTest" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="nlp.learning.evolutionary.LearningGeneticTest" />
       <module name="SimpleNLP.test" />
@@ -123,19 +137,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="nlp.learning.clustering.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="edp.test" />
-      <module name="yank-nlp.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -183,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EncoderLSITest" />
         <item itemvalue="Application.LearningLloydsTest" />
         <item itemvalue="Gradle.simple-nlp [build]" />
         <item itemvalue="Gradle.simple-nlp [clean]" />
         <item itemvalue="Application.LearningGeneticTest" />
-        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -254,6 +255,11 @@
           <url>file://$PROJECT_DIR$/src/main/scala/simple/nlp/learning/clustering/LearningLloyds.scala</url>
           <line>63</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/test/scala/nlp/encoder/wordembedding/EncoderLSITest.scala</url>
+          <line>22</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,5 +1,7 @@
 package simple.nlp.operator
 
+import org.apache.spark.mllib.linalg.Vector
+
 object OperatorArray {
   def arrayModulus(v: Array[Double]): Double = math.sqrt(v.map(a => math.pow(a, 2)).sum)
 
@@ -11,6 +13,15 @@ object OperatorArray {
 
   def sumArrayCoordinates(array1: Array[Float], array2: Array[Float]):Array[Float] =
     (array1 zip array2).map(v => v._1 + v._2)
+
+  def multiplyArrayCoordinates(u:Array[Double], v:Array[Double]):Array[Double]  =
+    (u zip v).map(t => t._1 * t._2)
+
+  def multiplyArrayCoordinatesByEscalar (u:Vector,v:Double):Array[Double]  =
+    u.toArray.map(t => t * v)
+
+  def inverse (u:Array[Double]):Array[Double]  =
+    u.map(t => 1/t)
 
 
 }

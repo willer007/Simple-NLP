@@ -17,8 +17,6 @@ products:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\EncoderLSI.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\encoder\wordembedding\EncoderLSI.class
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\SVD.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\encoder\wordembedding\SVD$.class
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\SVD.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\encoder\wordembedding\SVD.class
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\testEncoderLSI.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\encoder\wordembedding\testEncoderLSI$.class
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\testEncoderLSI.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\encoder\wordembedding\testEncoderLSI.class
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Cluster.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\clustering\Cluster$.class
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Cluster.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\clustering\Cluster.class
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\LearningLloyds.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\clustering\LearningLloyds$.class
@@ -62,7 +60,6 @@ binary dependencies:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\SVD.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\SVD.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.apache.spark\spark-mllib_2.12\2.4.4\f366b5382c1fd482a5901ca3ecb38224590fcb14\spark-mllib_2.12-2.4.4.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\SVD.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\testEncoderLSI.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Cluster.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Cluster.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\LearningLloyds.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
@@ -76,6 +73,7 @@ binary dependencies:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\normalizer\tokens\NormalizerTokens.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\normalizer\tokens\NormalizerTokens.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\operator\OperatorArray.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\operator\OperatorArray.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.apache.spark\spark-mllib_2.12\2.4.4\f366b5382c1fd482a5901ca3ecb38224590fcb14\spark-mllib_2.12-2.4.4.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\operator\OperatorArray.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\operator\OperatorLexical.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\operator\OperatorLexical.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
@@ -86,10 +84,9 @@ binary dependencies:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\tokenization\Tokenization.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
 source dependencies:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\dataset\Dataset.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\dataset\Data.scala
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\EncoderLSI.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\SimpleNLP.scala
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\EncoderLSI.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\binary\EncoderBinary.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\EncoderLSI.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\DataLSI.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\EncoderLSI.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\SVD.scala
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\EncoderLSI.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\operator\OperatorArray.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\LearningLloyds.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Cluster.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\LearningLloyds.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\operator\OperatorArray.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\evolutionary\LearningGenetic.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\operator\OperatorArray.scala
@@ -123,8 +120,6 @@ class names:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\EncoderLSI.scala -> simple.nlp.encoder.wordembedding.EncoderLSI$
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\SVD.scala -> simple.nlp.encoder.wordembedding.SVD
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\SVD.scala -> simple.nlp.encoder.wordembedding.SVD$
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\testEncoderLSI.scala -> simple.nlp.encoder.wordembedding.testEncoderLSI
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\testEncoderLSI.scala -> simple.nlp.encoder.wordembedding.testEncoderLSI$
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Cluster.scala -> simple.nlp.learning.clustering.Cluster
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\Cluster.scala -> simple.nlp.learning.clustering.Cluster$
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\LearningLloyds.scala -> simple.nlp.learning.clustering.LearningLloyds

@@ -1,21 +1,19 @@
 package simple.nlp.encoder.wordembedding
 
-import java.io.{File, FileWriter}
 
 import org.apache.spark.mllib.linalg.distributed.RowMatrix
-import org.apache.spark.mllib.linalg.{Matrix, SingularValueDecomposition, Vector}
+import org.apache.spark.mllib.linalg.{Matrix, SingularValueDecomposition, Vector, Vectors}
 import org.apache.spark.{SparkConf, SparkContext}
-import simple.nlp.SimpleNLP
-import simple.nlp.encoder.binary.EncoderBinary
+import simple.nlp.operator.OperatorArray
 
 import scala.collection.mutable.ArrayBuffer
 
 object EncoderLSI {
 
-  def encode(arrayOfDataBinaryEncoded:Array[Vector],
-             arrayOfSentencesBinaryEncoded:Array[Array[String]]): SVD = {
+  private var dataEncoded:SVD = SVD.empty()
 
-    System.setProperty("hadoop.home.dir", "C:\\hadoop\\")
+
+  def encode(inputs:Array[Vector] , numOfDimensions:Int): Array[Array[Double]] = {
 
     val sparkConf = new SparkConf()
       .setAppName("SimpleNLP")
@@ -23,59 +21,50 @@ object EncoderLSI {
       .set("spark.executor.memory", "6g")
 
 
-    val sc = new SparkContext(sparkConf)
+    val sparkContext = new SparkContext(sparkConf)
+    val inputsParallel = sparkContext.parallelize(inputs)
 
-    var rows = sc.parallelize(arrayOfDataBinaryEncoded)
+    val rowMatrixInputs: RowMatrix = new RowMatrix(inputsParallel)
 
-    var mat: RowMatrix = new RowMatrix(rows)
-
-    var svd: SingularValueDecomposition[RowMatrix, Matrix] = mat.computeSVD(6, computeU = true)
-    var V: RowMatrix = svd.U // ORTONORMAL VECTOR rotate
+    val svd: SingularValueDecomposition[RowMatrix, Matrix] = rowMatrixInputs.computeSVD(numOfDimensions, computeU = true)
+    val V: RowMatrix = svd.U // ORTONORMAL VECTOR rotate
     val s: Vector = svd.s //    SIGMA SINGULAR VECTOR strech
     val U: Matrix = svd.V //    ORTONORMAL VECTOR rotate
 
 
     //RETURN SVD
-    val response:SVD = SVD( V.rows.collect().map(v => v.toArray),s,U, arrayOfSentencesBinaryEncoded)
+    dataEncoded = SVD( V.rows.collect().map(v => v.toArray),s,U)
 
     //STOP SPARK CONTEXT
-    sc.stop()
-    sc.clearCallSite()
-    sc.clearJobGroup()
-    response
+    sparkContext.stop()
+    sparkContext.clearCallSite()
+    sparkContext.clearJobGroup()
+    dataEncoded.V
 
   }
 
 
+  def encodeQuery(q:Array[Double]):Array[Double] = {
 
-
-  //CALCULATE NEW QUERY WITH IS A DIMENSIONALITY REDUCTION OF QUERY PASSED BY PARAMETER
-  def calcQuery(q:Array[Double], svd:SVD) = {
     var queryCalculated: ArrayBuffer[Array[Double]] = ArrayBuffer.empty
 
-    //OPERADORES VETORIAIS
-    val arrayMutiplication = (u:Array[Double],v:Array[Double])  =>  (u zip v).map(t => t._1 * t._2)
-    val arrayMutiplicationByEscalar = (u:Vector,v:Double)  =>  u.toArray.map(t => t * v)
+    var productUQ = dataEncoded.U.transpose.multiply(Vectors.dense(q)).toArray
 
-    //MULTIPLICACAO Caux = U * S
-    var cAux:ArrayBuffer[Array[Double]] = ArrayBuffer.empty
-    for (index <- svd.s.toArray.indices){
-      cAux += arrayMutiplicationByEscalar.apply(svd.U.colIter.next(),1/svd.s(index))
-    }
+    var sInverse = OperatorArray.inverse(dataEncoded.s.toArray)
 
-    //MULTIPLICACAO Qnew = Qold * Caux
-     cAux.map( c => arrayMutiplication(c,q).sum).toArray
+    return OperatorArray.multiplyArrayCoordinates(productUQ,sInverse)
 
   }
 
   def similarityRank(lsiEncodedData:Array[DataLSI], q: Array[Double]):Array[DataLSI] =
     lsiEncodedData.sortWith((a,b) => productEscalar(q,a.position) < productEscalar(q,b.position))
 
-  def productEscalar(q:Array[Double],d:Array[Double]): Double = (q zip d).map(t => t._1*t._2).sum / (arrayModulus(q) * arrayModulus(d))
+  def productEscalar(q:Array[Double],d:Array[Double]): Double =
+    (q zip d).map(t => t._1*t._2).sum / (OperatorArray.arrayModulus(q) * OperatorArray.arrayModulus(d))
 
-  def arrayModulus(v:Array[Double]): Double = math.sqrt(v.map( a => math.pow(a,2)).sum)
 
-  def dotProduct(v:Array[Double],u:Array[Double]):Double = productEscalar(v,u)/(arrayModulus(v) * arrayModulus(u))
+  def dotProduct(v:Array[Double],u:Array[Double]):Double =
+    productEscalar(v,u)/(OperatorArray.arrayModulus(v) * OperatorArray.arrayModulus(u))
 
 }
 
