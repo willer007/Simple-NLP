@@ -38,6 +38,8 @@ products:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\SimpleNLP.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\SimpleNLP.class
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\tokenization\Tokenization.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\tokenization\Tokenization$.class
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\tokenization\Tokenization.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\tokenization\Tokenization.class
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\sentiment\Analisys.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\sentiment\Analisys$.class
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\sentiment\Analisys.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\sentiment\Analisys.class
 binary dependencies:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\csv\SimpleCSV.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\csv\SimpleCSV.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
@@ -78,6 +80,8 @@ binary dependencies:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\SimpleNLP.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\tokenization\Tokenization.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\tokenization\Tokenization.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\sentiment\Analisys.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\sentiment\Analisys.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
 source dependencies:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\dataset\Dataset.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\dataset\Data.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\EncoderLSI.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\SVD.scala
@@ -93,8 +97,16 @@ source dependencies:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\SimpleNLP.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\clustering\LearningLloyds.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\SimpleNLP.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\learning\evolutionary\LearningGenetic.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\SimpleNLP.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\normalizer\tokens\NormalizerTokens.scala
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\SimpleNLP.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\operator\OperatorArray.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\SimpleNLP.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\operator\OperatorLexical.scala
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\SimpleNLP.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\similarity\SimilarityCossine.scala
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\SimpleNLP.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\tokenization\Tokenization.scala
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\sentiment\Analisys.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\csv\SimpleCSV.scala
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\sentiment\Analisys.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\SimpleNLP.scala
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\sentiment\Analisys.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\binary\EncoderBinary.scala
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\sentiment\Analisys.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\encoder\wordembedding\EncoderLSI.scala
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\sentiment\Analisys.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\similarity\SimilarityCossine.scala
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\sentiment\Analisys.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\tokenization\Tokenization.scala
 external dependencies:
 class names:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\csv\SimpleCSV.scala -> simple.csv.Row
@@ -136,3 +148,5 @@ class names:
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\SimpleNLP.scala -> simple.nlp.SimpleNLP$
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\tokenization\Tokenization.scala -> simple.nlp.tokenization.Tokenization
    C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\nlp\tokenization\Tokenization.scala -> simple.nlp.tokenization.Tokenization$
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\sentiment\Analisys.scala -> simple.sentiment.Analisys
+   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\main\scala\simple\sentiment\Analisys.scala -> simple.sentiment.Analisys$

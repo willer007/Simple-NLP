@@ -2,9 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea4d895a-e54d-426d-a91c-d87791d4837e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/simple/sentiment/Analisys.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/wordembedding/DataLSI.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/scala/main/simple/csv/Row$.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/main/simple/csv/Row$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/scala/main/simple/csv/Row.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/main/simple/csv/Row.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/scala/main/simple/csv/SimpleCSV$.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/main/simple/csv/SimpleCSV$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/scala/main/simple/csv/SimpleCSV.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/main/simple/csv/SimpleCSV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/scala/main/simple/nlp/encoder/binary/EncoderBinary$.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/main/simple/nlp/encoder/binary/EncoderBinary$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/scala/main/simple/nlp/encoder/binary/EncoderBinary.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/scala/main/simple/nlp/encoder/binary/EncoderBinary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileScala.analysis" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileScala.analysis" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileScala.analysis.relations" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileScala.analysis.relations" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/csv/SimpleCSV.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/csv/SimpleCSV.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/SimpleNLP.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/SimpleNLP.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/binary/EncoderBinary.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/binary/EncoderBinary.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/wordembedding/EncoderLSI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/simple/nlp/encoder/wordembedding/EncoderLSI.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/nlp/encoder/wordembedding/EncoderLSITest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/nlp/encoder/wordembedding/EncoderLSITest.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,13 +122,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EncoderLSITest">
-    <configuration name="EncoderLSITest" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="nlp.encoder.wordembedding.EncoderLSITest" />
-      <module name="SimpleNLP.test" />
+  <component name="RunManager" selected="Application.Analisys">
+    <configuration name="Analisys" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="simple.sentiment.Analisys" />
+      <module name="SimpleNLP.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nlp.encoder.wordembedding.*" />
+          <option name="PATTERN" value="simple.sentiment.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +136,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LearningGeneticTest" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="nlp.learning.evolutionary.LearningGeneticTest" />
+    <configuration name="EncoderLSITest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="nlp.encoder.wordembedding.EncoderLSITest" />
       <module name="SimpleNLP.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nlp.learning.evolutionary.*" />
+          <option name="PATTERN" value="nlp.encoder.wordembedding.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,11 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Analisys" />
         <item itemvalue="Application.EncoderLSITest" />
         <item itemvalue="Application.LearningLloydsTest" />
         <item itemvalue="Gradle.simple-nlp [build]" />
         <item itemvalue="Gradle.simple-nlp [clean]" />
-        <item itemvalue="Application.LearningGeneticTest" />
       </list>
     </recent_temporary>
   </component>
@@ -255,9 +275,14 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/test/scala/nlp/encoder/wordembedding/EncoderLSITest.scala</url>
-          <line>22</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/src/main/scala/simple/sentiment/Analisys.scala</url>
+          <line>44</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/simple/sentiment/Analisys.scala</url>
+          <line>43</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

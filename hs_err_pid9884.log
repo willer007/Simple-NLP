@@ -1,0 +1,257 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32744 bytes for ChunkPool::allocate
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Zero Based Compressed Oops mode in which the Java heap is
+#     placed in the first 32GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 32GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:273), pid=9884, tid=0x000000000000326c
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_201-b09) (build 1.8.0_201-b09)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.201-b09 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002a71800):  JavaThread "main" [_thread_in_vm, id=12908, stack(0x0000000002960000,0x0000000002a60000)]
+
+Stack: [0x0000000002960000,0x0000000002a60000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  java.lang.ClassLoader.defineClass1(Ljava/lang/String;[BIILjava/security/ProtectionDomain;Ljava/lang/String;)Ljava/lang/Class;+0
+j  java.lang.ClassLoader.defineClass(Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class;+27
+j  java.security.SecureClassLoader.defineClass(Ljava/lang/String;[BIILjava/security/CodeSource;)Ljava/lang/Class;+12
+j  java.net.URLClassLoader.defineClass(Ljava/lang/String;Lsun/misc/Resource;)Ljava/lang/Class;+138
+j  java.net.URLClassLoader.access$100(Ljava/net/URLClassLoader;Ljava/lang/String;Lsun/misc/Resource;)Ljava/lang/Class;+3
+j  java.net.URLClassLoader$1.run()Ljava/lang/Class;+43
+j  java.net.URLClassLoader$1.run()Ljava/lang/Object;+1
+v  ~StubRoutines::call_stub
+j  java.security.AccessController.doPrivileged(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;+0
+j  java.net.URLClassLoader.findClass(Ljava/lang/String;)Ljava/lang/Class;+13
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+70
+j  sun.misc.Launcher$AppClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+81
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;)Ljava/lang/Class;+3
+v  ~StubRoutines::call_stub
+j  java.lang.ClassLoader.defineClass1(Ljava/lang/String;[BIILjava/security/ProtectionDomain;Ljava/lang/String;)Ljava/lang/Class;+0
+j  java.lang.ClassLoader.defineClass(Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class;+27
+j  java.security.SecureClassLoader.defineClass(Ljava/lang/String;[BIILjava/security/CodeSource;)Ljava/lang/Class;+12
+j  java.net.URLClassLoader.defineClass(Ljava/lang/String;Lsun/misc/Resource;)Ljava/lang/Class;+138
+j  java.net.URLClassLoader.access$100(Ljava/net/URLClassLoader;Ljava/lang/String;Lsun/misc/Resource;)Ljava/lang/Class;+3
+j  java.net.URLClassLoader$1.run()Ljava/lang/Class;+43
+j  java.net.URLClassLoader$1.run()Ljava/lang/Object;+1
+v  ~StubRoutines::call_stub
+j  java.security.AccessController.doPrivileged(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;+0
+j  java.net.URLClassLoader.findClass(Ljava/lang/String;)Ljava/lang/Class;+13
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+70
+j  sun.misc.Launcher$AppClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+81
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;)Ljava/lang/Class;+3
+v  ~StubRoutines::call_stub
+j  java.lang.ClassLoader.defineClass1(Ljava/lang/String;[BIILjava/security/ProtectionDomain;Ljava/lang/String;)Ljava/lang/Class;+0
+j  java.lang.ClassLoader.defineClass(Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class;+27
+j  java.security.SecureClassLoader.defineClass(Ljava/lang/String;[BIILjava/security/CodeSource;)Ljava/lang/Class;+12
+j  java.net.URLClassLoader.defineClass(Ljava/lang/String;Lsun/misc/Resource;)Ljava/lang/Class;+138
+j  java.net.URLClassLoader.access$100(Ljava/net/URLClassLoader;Ljava/lang/String;Lsun/misc/Resource;)Ljava/lang/Class;+3
+j  java.net.URLClassLoader$1.run()Ljava/lang/Class;+43
+j  java.net.URLClassLoader$1.run()Ljava/lang/Object;+1
+v  ~StubRoutines::call_stub
+j  java.security.AccessController.doPrivileged(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;+0
+j  java.net.URLClassLoader.findClass(Ljava/lang/String;)Ljava/lang/Class;+13
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+70
+j  sun.misc.Launcher$AppClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+81
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;)Ljava/lang/Class;+3
+v  ~StubRoutines::call_stub
+j  scala.io.Source$.fromFile(Ljava/io/File;ILscala/io/Codec;)Lscala/io/BufferedSource;+54
+j  scala.io.Source$.fromFile(Ljava/io/File;Lscala/io/Codec;)Lscala/io/BufferedSource;+7
+j  scala.io.Source$.fromFile(Ljava/lang/String;Lscala/io/Codec;)Lscala/io/BufferedSource;+10
+j  simple.csv.SimpleCSV$.readCSV(Ljava/lang/String;)Ljava/lang/String;+10
+j  simple.sentiment.Analisys$.main([Ljava/lang/String;)V+8
+j  simple.sentiment.Analisys.main([Ljava/lang/String;)V+4
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000000001bf37000 JavaThread "Service Thread" daemon [_thread_blocked, id=11260, stack(0x000000001ce80000,0x000000001cf80000)]
+  0x000000001befa800 JavaThread "C1 CompilerThread3" daemon [_thread_blocked, id=12924, stack(0x000000001cd80000,0x000000001ce80000)]
+  0x000000001bef9800 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=15464, stack(0x000000001cc80000,0x000000001cd80000)]
+  0x000000001bef4000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=2888, stack(0x000000001cb80000,0x000000001cc80000)]
+  0x000000001bef0800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=13760, stack(0x000000001ca80000,0x000000001cb80000)]
+  0x000000001bed2800 JavaThread "JDWP Command Reader" daemon [_thread_in_native, id=15488, stack(0x000000001c980000,0x000000001ca80000)]
+  0x000000001bed1000 JavaThread "JDWP Event Helper Thread" daemon [_thread_blocked, id=4056, stack(0x000000001c880000,0x000000001c980000)]
+  0x000000001beac000 JavaThread "JDWP Transport Listener: dt_socket" daemon [_thread_blocked, id=13572, stack(0x000000001c780000,0x000000001c880000)]
+  0x000000001bea5800 JavaThread "Attach Listener" daemon [_thread_blocked, id=2224, stack(0x000000001c680000,0x000000001c780000)]
+  0x000000001beb7800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=15500, stack(0x000000001c580000,0x000000001c680000)]
+  0x000000001a0bb000 JavaThread "Finalizer" daemon [_thread_blocked, id=9108, stack(0x000000001c370000,0x000000001c470000)]
+  0x000000001be90800 JavaThread "Reference Handler" daemon [_thread_blocked, id=14076, stack(0x000000001c270000,0x000000001c370000)]
+=>0x0000000002a71800 JavaThread "main" [_thread_in_vm, id=12908, stack(0x0000000002960000,0x0000000002a60000)]
+
+Other Threads:
+  0x000000001a0ad800 VMThread [stack: 0x000000001bd70000,0x000000001be70000] [id=7380]
+  0x000000001bfba000 WatcherThread [stack: 0x000000001cf80000,0x000000001d080000] [id=7572]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x0000000700c00000, size: 3060 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x00000007c0000000
+
+Heap:
+ PSYoungGen      total 57344K, used 9833K [0x0000000780400000, 0x0000000784400000, 0x00000007c0000000)
+  eden space 49152K, 20% used [0x0000000780400000,0x0000000780d9a6b0,0x0000000783400000)
+  from space 8192K, 0% used [0x0000000783c00000,0x0000000783c00000,0x0000000784400000)
+  to   space 8192K, 0% used [0x0000000783400000,0x0000000783400000,0x0000000783c00000)
+ ParOldGen       total 131072K, used 0K [0x0000000700c00000, 0x0000000708c00000, 0x0000000780400000)
+  object space 131072K, 0% used [0x0000000700c00000,0x0000000700c00000,0x0000000708c00000)
+ Metaspace       used 5137K, capacity 5594K, committed 5760K, reserved 1056768K
+  class space    used 529K, capacity 593K, committed 640K, reserved 1048576K
+
+Card table byte_map: [0x0000000011f20000,0x0000000012520000] byte_map_base: 0x000000000e71a000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000073d44ce0
+ Begin Bits: [0x0000000013120000, 0x00000000160f0000)
+ End Bits:   [0x00000000160f0000, 0x00000000190c0000)
+
+Polling page: 0x0000000000a40000
+
+CodeCache: size=245760Kb used=1997Kb max_used=2006Kb free=243762Kb
+ bounds [0x0000000002b60000, 0x0000000002dd0000, 0x0000000011b60000]
+ total_blobs=657 nmethods=403 adapters=176
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 0.518 Thread 0x000000001befa800  399  s    3       sun.misc.PerfCounter::get (9 bytes)
+Event: 0.518 Thread 0x000000001befa800 nmethod 399 0x0000000002d504d0 code [0x0000000002d50640, 0x0000000002d509e8]
+Event: 0.519 Thread 0x000000001bef0800  400       4       java.lang.Math::min (11 bytes)
+Event: 0.519 Thread 0x000000001bef0800 nmethod 400 0x0000000002d502d0 code [0x0000000002d50400, 0x0000000002d50458]
+Event: 0.521 Thread 0x000000001befa800  401       3       java.util.zip.ZipFile::access$400 (5 bytes)
+Event: 0.521 Thread 0x000000001befa800 nmethod 401 0x0000000002d4ff90 code [0x0000000002d500e0, 0x0000000002d50210]
+Event: 0.521 Thread 0x000000001befa800  402       3       java.util.WeakHashMap::maskNull (12 bytes)
+Event: 0.521 Thread 0x000000001befa800 nmethod 402 0x0000000002d562d0 code [0x0000000002d56420, 0x0000000002d565b0]
+Event: 0.521 Thread 0x000000001befa800  403       3       java.util.WeakHashMap::hash (28 bytes)
+Event: 0.521 Thread 0x000000001befa800 nmethod 403 0x0000000002d55e50 code [0x0000000002d55fc0, 0x0000000002d56208]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (1 events):
+Event: 0.309 Thread 0x0000000002a71800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002c78cac method=java.lang.String.hashCode()I @ 14
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0.306 Thread 0x0000000002a71800 Exception <a 'java/security/PrivilegedActionException'> (0x00000007805132c8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u201\12322\hotspot\src\share\vm\prims\jvm.cpp, line 1502]
+Event: 0.306 Thread 0x0000000002a71800 Exception <a 'java/security/PrivilegedActionException'> (0x00000007805134d8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u201\12322\hotspot\src\share\vm\prims\jvm.cpp, line 1502]
+Event: 0.322 Thread 0x0000000002a71800 Exception <a 'java/security/PrivilegedActionException'> (0x0000000780520868) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u201\12322\hotspot\src\share\vm\prims\jvm.cpp, line 1502]
+Event: 0.322 Thread 0x0000000002a71800 Exception <a 'java/security/PrivilegedActionException'> (0x0000000780520a78) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u201\12322\hotspot\src\share\vm\prims\jvm.cpp, line 1502]
+Event: 0.433 Thread 0x0000000002a71800 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x0000000780a7ec50) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u201\12322\hotspot\src\share\vm\prims\methodHandles.cpp, line 1167]
+Event: 0.434 Thread 0x0000000002a71800 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x0000000780a8c050) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u201\12322\hotspot\src\share\vm\prims\methodHandles.cpp, line 1167]
+Event: 0.483 Thread 0x0000000002a71800 Exception <a 'java/security/PrivilegedActionException'> (0x0000000780bd2af0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u201\12322\hotspot\src\share\vm\prims\jvm.cpp, line 1502]
+Event: 0.483 Thread 0x0000000002a71800 Exception <a 'java/security/PrivilegedActionException'> (0x0000000780bd2ee8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u201\12322\hotspot\src\share\vm\prims\jvm.cpp, line 1502]
+Event: 0.483 Thread 0x0000000002a71800 Exception <a 'java/security/PrivilegedActionException'> (0x0000000780bd71c8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u201\12322\hotspot\src\share\vm\prims\jvm.cpp, line 1502]
+Event: 0.483 Thread 0x0000000002a71800 Exception <a 'java/security/PrivilegedActionException'> (0x0000000780bd75c0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u201\12322\hotspot\src\share\vm\prims\jvm.cpp, line 1502]
+
+Events (10 events):
+Event: 0.520 loading class scala/collection/immutable/LinearSeq
+Event: 0.520 loading class scala/collection/immutable/LinearSeq done
+Event: 0.520 loading class scala/collection/immutable/Seq
+Event: 0.520 loading class scala/collection/immutable/Seq done
+Event: 0.520 loading class scala/collection/immutable/Iterable
+Event: 0.520 loading class scala/collection/immutable/Iterable done
+Event: 0.521 loading class scala/collection/immutable/Traversable
+Event: 0.521 loading class scala/collection/immutable/Traversable done
+Event: 0.521 loading class scala/Immutable
+Event: 0.521 loading class scala/Immutable done
+
+
+Dynamic libraries:
+0x00007ff6086c0000 - 0x00007ff6086f7000 	C:\Program Files\Java\jdk1.8.0_201\bin\java.exe
+0x00007ffc6b590000 - 0x00007ffc6b77d000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffc6a480000 - 0x00007ffc6a533000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffc67f10000 - 0x00007ffc681a3000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffc6a660000 - 0x00007ffc6a703000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffc6a070000 - 0x00007ffc6a10e000 	C:\Windows\System32\msvcrt.dll
+0x00007ffc6b2a0000 - 0x00007ffc6b33e000 	C:\Windows\System32\sechost.dll
+0x00007ffc6b170000 - 0x00007ffc6b292000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffc6aca0000 - 0x00007ffc6ae37000 	C:\Windows\System32\USER32.dll
+0x00007ffc67680000 - 0x00007ffc676a0000 	C:\Windows\System32\win32u.dll
+0x00007ffc689c0000 - 0x00007ffc689e9000 	C:\Windows\System32\GDI32.dll
+0x00007ffc683f0000 - 0x00007ffc68589000 	C:\Windows\System32\gdi32full.dll
+0x00007ffc68590000 - 0x00007ffc68630000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffc68630000 - 0x00007ffc6872a000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffc58a10000 - 0x00007ffc58c89000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17763.802_none_05b1445c0722d2cc\COMCTL32.dll
+0x00007ffc6ae40000 - 0x00007ffc6b16c000 	C:\Windows\System32\combase.dll
+0x00007ffc68730000 - 0x00007ffc687ae000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffc6a710000 - 0x00007ffc6a73e000 	C:\Windows\System32\IMM32.DLL
+0x0000000073dd0000 - 0x0000000073ea1000 	C:\Program Files\Java\jdk1.8.0_201\jre\bin\msvcr100.dll
+0x0000000073520000 - 0x0000000073dc4000 	C:\Program Files\Java\jdk1.8.0_201\jre\bin\server\jvm.dll
+0x00007ffc6a300000 - 0x00007ffc6a308000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffc62380000 - 0x00007ffc6238a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffc5c480000 - 0x00007ffc5c489000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffc64330000 - 0x00007ffc64354000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffc6a5f0000 - 0x00007ffc6a65d000 	C:\Windows\System32\WS2_32.dll
+0x00007ffc64300000 - 0x00007ffc6432d000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x00007ffc67770000 - 0x00007ffc677ba000 	C:\Windows\System32\cfgmgr32.dll
+0x00007ffc5c450000 - 0x00007ffc5c45f000 	C:\Program Files\Java\jdk1.8.0_201\jre\bin\verify.dll
+0x00007ffc55f70000 - 0x00007ffc55f99000 	C:\Program Files\Java\jdk1.8.0_201\jre\bin\java.dll
+0x00007ffc5c1b0000 - 0x00007ffc5c1e5000 	C:\Program Files\Java\jdk1.8.0_201\jre\bin\jdwp.dll
+0x00007ffc5c830000 - 0x00007ffc5c838000 	C:\Program Files\Java\jdk1.8.0_201\jre\bin\npt.dll
+0x00007ffc552e0000 - 0x00007ffc552f6000 	C:\Program Files\Java\jdk1.8.0_201\jre\bin\zip.dll
+0x00007ffc68b70000 - 0x00007ffc6a064000 	C:\Windows\System32\SHELL32.dll
+0x00007ffc689f0000 - 0x00007ffc68a98000 	C:\Windows\System32\shcore.dll
+0x00007ffc677c0000 - 0x00007ffc67f0d000 	C:\Windows\System32\windows.storage.dll
+0x00007ffc675a0000 - 0x00007ffc675c4000 	C:\Windows\System32\profapi.dll
+0x00007ffc675f0000 - 0x00007ffc6764d000 	C:\Windows\System32\powrprof.dll
+0x00007ffc6b500000 - 0x00007ffc6b552000 	C:\Windows\System32\shlwapi.dll
+0x00007ffc67580000 - 0x00007ffc67591000 	C:\Windows\System32\kernel.appcore.dll
+0x00007ffc67750000 - 0x00007ffc67767000 	C:\Windows\System32\cryptsp.dll
+0x00007ffc5c440000 - 0x00007ffc5c449000 	C:\Program Files\Java\jdk1.8.0_201\jre\bin\dt_socket.dll
+0x00007ffc66d90000 - 0x00007ffc66df7000 	C:\Windows\system32\mswsock.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=59248 -Dfile.encoding=windows-1252 -Duser.country=BR -Duser.language=pt -Duser.variant 
+java_command: simple.sentiment.Analisys
+java_class_path (initial): C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\java\main;C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main;C:\Users\Willer\Desktop\repositorios\simple-nlp\build\resources\main;C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.apache.spark\spark-mllib_2.12\2.4.4\f366b5382c1fd482a5901ca3ecb38224590fcb14\spark-mllib_2.12-2.4.4.jar;C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.apache.spark\spark-streaming_2.12\2.4.4\5051a3786b6125f505b968666d2c56d01aef0095\spark-streaming_2.12-2.4.4.jar;C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.apache.spark\spark-sql_2.12\2.4.4\ec1d629508b27dd126a3b24ce8af91e72778e16f\spark-sql_2.12-2.4.4.jar;C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.apache.spark\spark-graphx_2.12\2.4.4\f51ac35d8b41f2129b69c5b878ab3e8d637efd85\spark-graphx_2.12-2.4.4.jar;C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.apache.spark\spark-catalyst_2.12\2.4.4\50172ab29cae575c85216348cf22a544f7d7205\spark-catalyst_2.12-2.4.4.jar;C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.apache.spark\spark-core_2.12\2.4.4\6e606150eb038cccf319869de3c0cd32e6f9d2ff\spark-core_2.12-2.4.4.jar;C:\Users\Willer\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.module\jackson-module-scala_2.12\2.6.7.1\59e3cb75d53ec5b28d4af33f149f5074cb87f9b5\jackson-module-scala_2.12-2.6.7.1.jar;C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.apache.spark\spark-mllib-local_2.12\2.4.4\42a315b2191310ed73bd3044e31ed666c4ff6a8b\spark-mllib-local_2.12-2.4.4.jar;C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scalanlp\breeze_2.12\0.13.2\9f70553f79824eda6afb5e681dfa30788c5c6be7\breeze_2.12-0.13.2.jar;C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scalanlp\breeze-macros_2.12\0.13.2\2c2f4ed921b1564de17b63b996d102b9ccc91f16\breeze-macros_2.12-0.13.2.jar;C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.spire-math\spire_2.12\0.13.0\28b4a0b11618f82ded3d34ef58292c6c93d755
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\OpenSSL-Win64\bin;C:\ProgramData\Anaconda3\Scripts;C:\ProgramData\Anaconda3\Library\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;%APPDATA%\npm;C:\Users\Willer\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Willer\AppData\Local\Programs\Python\Python37\;C:\Users\Willer\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Willer\AppData\Local\Programs\Python\Python36\;C:\Users\Willer\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2018.3.5\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.5\bin;;C:\Users\Willer\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Willer\AppData\Roaming\npm
+USERNAME=Willer
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 21 Model 1 Stepping 2, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 17763 (10.0.17763.475)
+
+CPU:total 8 (initial active 8) (8 cores per cpu, 1 threads per core) family 21 model 1 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 12526944k(3601680k free), swap 27100636k(5120k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.201-b09) for windows-amd64 JRE (1.8.0_201-b09), built on Dec 15 2018 18:36:39 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sun Nov 03 01:09:01 2019
+timezone: Hora oficial do Brasil
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

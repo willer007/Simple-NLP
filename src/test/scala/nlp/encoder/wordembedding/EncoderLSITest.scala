@@ -20,9 +20,7 @@ object EncoderLSITest {
     var testQuery = EncoderLSI.encodeQuery(query)
 
 
-    print("teste")
-
-
   }
 
 }
+

@@ -1,9 +1,9 @@
 package simple.nlp.encoder.binary
 
 object EncoderBinary {
-  var tokenEncoder: Map[String, Int] = Map.empty
-  var tokenDecoder: Map[Int, String] = Map.empty
-  var numberOfTokens = 0
+  private var tokenEncoder: Map[String, Int] = Map.empty
+  private var tokenDecoder: Map[Int, String] = Map.empty
+  private var numberOfTokens = 0
 
   def loadTokens(setTokens: Set[String]) = {
     numberOfTokens = 0
@@ -17,7 +17,7 @@ object EncoderBinary {
   def encode(arrayToken: Array[String]): Array[Int] = {
     var tokensEncoded = Array.ofDim[Int](numberOfTokens)
     arrayToken.foreach(token => {
-      var tokenPosition = tokenEncoder(token)
+      val tokenPosition = tokenEncoder(token)
       var tokenOccurrence = (tokensEncoded(tokenPosition))
       tokenOccurrence = (tokenOccurrence + 1)
       tokensEncoded(tokenPosition) = tokenOccurrence
