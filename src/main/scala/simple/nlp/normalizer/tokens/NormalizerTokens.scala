@@ -3,8 +3,8 @@ package simple.nlp.normalizer.tokens
 object NormalizerTokens {
 
 
-  def applyTfIDF(tokensArray:Array[String]): Map[String,Int] =
-    tokensArray.groupBy(identity).mapValues(_.size)
+  /*def applyTfIDF(tokensArray:Array[String]): Map[String,Int] =
+    tokensArray.groupBy(identity).mapValues(_.size)*/
 
 
   def binarySearch(tokensArray:Array[String], item: String): Int = {

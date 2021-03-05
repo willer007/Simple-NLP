@@ -1,31 +1,33 @@
 products:
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\test\nlp\encoder\wordembedding\EncoderLSITest$.class
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\test\nlp\encoder\wordembedding\EncoderLSITest.class
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\test\nlp\learning\clustering\LearningLloydsTest$.class
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\test\nlp\learning\clustering\LearningLloydsTest.class
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\test\nlp\learning\evolutionary\LearningGeneticTest$.class
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\test\nlp\learning\evolutionary\LearningGeneticTest.class
+   C:\Simple-NLP\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> C:\Simple-NLP\build\classes\scala\test\nlp\encoder\wordembedding\EncoderLSITest$.class
+   C:\Simple-NLP\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> C:\Simple-NLP\build\classes\scala\test\nlp\encoder\wordembedding\EncoderLSITest.class
+   C:\Simple-NLP\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Simple-NLP\build\classes\scala\test\nlp\learning\clustering\LearningLloydsTest$.class
+   C:\Simple-NLP\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Simple-NLP\build\classes\scala\test\nlp\learning\clustering\LearningLloydsTest.class
+   C:\Simple-NLP\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Simple-NLP\build\classes\scala\test\nlp\learning\evolutionary\LearningGeneticTest$.class
+   C:\Simple-NLP\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Simple-NLP\build\classes\scala\test\nlp\learning\evolutionary\LearningGeneticTest.class
 binary dependencies:
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.apache.spark\spark-mllib_2.12\2.4.4\f366b5382c1fd482a5901ca3ecb38224590fcb14\spark-mllib_2.12-2.4.4.jar
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\encoder\wordembedding\EncoderLSI$.class
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\encoder\wordembedding\EncoderLSI.class
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\clustering\Cluster.class
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\clustering\LearningLloyds$.class
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\clustering\LearningLloyds.class
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Users\Willer\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.12.8\36b234834d8f842cdde963c8591efae6cf413e3f\scala-library-2.12.8.jar
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\evolutionary\LearningGenetic$.class
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Users\Willer\Desktop\repositorios\simple-nlp\build\classes\scala\main\simple\nlp\learning\evolutionary\LearningGenetic.class
+   C:\Simple-NLP\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> C:\Simple-NLP\build\classes\scala\main\simple\nlp\encoder\wordembedding\EncoderLSI$.class
+   C:\Simple-NLP\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> C:\Simple-NLP\build\classes\scala\main\simple\nlp\encoder\wordembedding\EncoderLSI.class
+   C:\Simple-NLP\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> C:\Users\wcarneiroqui\.gradle\caches\modules-2\files-2.1\org.apache.spark\spark-mllib_2.12\2.4.4\f366b5382c1fd482a5901ca3ecb38224590fcb14\spark-mllib_2.12-2.4.4.jar
+   C:\Simple-NLP\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> C:\Users\wcarneiroqui\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.13.2\280d2a51b3130cf869cb416404b2c0e44e433f3e\scala-library-2.13.2.jar
+   C:\Simple-NLP\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> C:\Users\wcarneiroqui\.jdks\corretto-1.8.0_282\jre\lib\rt.jar
+   C:\Simple-NLP\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Simple-NLP\build\classes\scala\main\simple\nlp\learning\clustering\Cluster.class
+   C:\Simple-NLP\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Simple-NLP\build\classes\scala\main\simple\nlp\learning\clustering\LearningLloyds$.class
+   C:\Simple-NLP\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Simple-NLP\build\classes\scala\main\simple\nlp\learning\clustering\LearningLloyds.class
+   C:\Simple-NLP\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\wcarneiroqui\.gradle\caches\modules-2\files-2.1\org.plotly-scala\plotly-core_2.13\0.8.0\5ace1d5b19a714f7070b5ed9476032c06c07ae77\plotly-core_2.13-0.8.0.jar
+   C:\Simple-NLP\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\wcarneiroqui\.gradle\caches\modules-2\files-2.1\org.plotly-scala\plotly-render_2.13\0.8.0\6871ea30d498a74160bcfcad4060af692e166d92\plotly-render_2.13-0.8.0.jar
+   C:\Simple-NLP\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\wcarneiroqui\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.13.2\280d2a51b3130cf869cb416404b2c0e44e433f3e\scala-library-2.13.2.jar
+   C:\Simple-NLP\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> C:\Users\wcarneiroqui\.jdks\corretto-1.8.0_282\jre\lib\rt.jar
+   C:\Simple-NLP\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Simple-NLP\build\classes\scala\main\simple\nlp\learning\evolutionary\LearningGenetic$.class
+   C:\Simple-NLP\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Simple-NLP\build\classes\scala\main\simple\nlp\learning\evolutionary\LearningGenetic.class
+   C:\Simple-NLP\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Users\wcarneiroqui\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.13.2\280d2a51b3130cf869cb416404b2c0e44e433f3e\scala-library-2.13.2.jar
+   C:\Simple-NLP\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> C:\Users\wcarneiroqui\.jdks\corretto-1.8.0_282\jre\lib\rt.jar
 source dependencies:
 external dependencies:
 class names:
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> nlp.encoder.wordembedding.EncoderLSITest
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> nlp.encoder.wordembedding.EncoderLSITest$
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> nlp.learning.clustering.LearningLloydsTest
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> nlp.learning.clustering.LearningLloydsTest$
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> nlp.learning.evolutionary.LearningGeneticTest
-   C:\Users\Willer\Desktop\repositorios\simple-nlp\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> nlp.learning.evolutionary.LearningGeneticTest$
+   C:\Simple-NLP\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> nlp.encoder.wordembedding.EncoderLSITest
+   C:\Simple-NLP\src\test\scala\nlp\encoder\wordembedding\EncoderLSITest.scala -> nlp.encoder.wordembedding.EncoderLSITest$
+   C:\Simple-NLP\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> nlp.learning.clustering.LearningLloydsTest
+   C:\Simple-NLP\src\test\scala\nlp\learning\clustering\LearningLloydsTest.scala -> nlp.learning.clustering.LearningLloydsTest$
+   C:\Simple-NLP\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> nlp.learning.evolutionary.LearningGeneticTest
+   C:\Simple-NLP\src\test\scala\nlp\learning\evolutionary\LearningGeneticTest.scala -> nlp.learning.evolutionary.LearningGeneticTest$

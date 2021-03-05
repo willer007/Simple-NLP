@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Clusterização pelo algoritmo de Lloyds</title>
+<script src="https://cdn.plot.ly/plotly-1.52.2.min.js"></script>
+</head>
+<body>
+<div id="chart"></div>
+<script>
+(function () {
+  var data0 = {"x":[5.0,6.0,7.0,8.0,9.0,10.0,1.0,2.0,3.0,4.0],"name":"Dados de entrada","mode":"markers","type":"scatter","y":[5.0,6.0,7.0,8.0,9.0,10.0,1.0,2.0,3.0,4.0]};
+  var data1 = {"x":[7.5,2.5],"name":"Centroides","mode":"markers","type":"scatter","y":[7.5,2.5]};
+
+  var data = [data0, data1];
+  var layout = {"title":"Clusterização pelo algoritmo de Lloyds"};
+ var config = {};
+
+  Plotly.plot('chart', data, layout, config);
+})();
+</script>
+</body>
+</html>
+       
